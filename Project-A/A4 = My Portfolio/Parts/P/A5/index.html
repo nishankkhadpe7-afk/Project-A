@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+
+        <div class="input-group">
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" placeholder="Enter a number">
+        </div>
+
+        <div class="input-group">
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" placeholder="Enter a number">
+        </div>
+
+        <div class="buttons">
+            <button onclick="calculate('Add')">+</button>
+            <button onclick="calculate('Sub')">-</button>
+            <button onclick="calculate('Mul')">×</button>
+            <button onclick="calculate('Div')">÷</button>
+            <button onclick="calculate('Exp')">xʸ</button>
+            <button onclick="calculate('Log')" class="log-btn">log</button>
+        </div>
+        
+        <div class="result-box">
+            <h2 id="result">Result: </h2>
+        </div>
+    </div>
+
+    <script src="operation.js"></script>
+</body>
+</html>
