@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="logo">MyPortfolio</div>
+    <nav id="navMenu">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme"></button>
+    <button class="hamburger" aria-label="Open Navigation" title="Open Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div id="navOverlay"></div>
+  
+  <section id="hero" class="hero fade-in-up">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Nishank</span></h1>
+      <h2><span id="typed"></span></h2>
+      <p>I Build Creative Website.</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="about fade-in-up">
+    <div class="about-container card">
+      <img src="Image/Owner.jpg" alt="Profile Picture" class="profile-pic" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m passionate about software development and creative problem-solving.
+        </p><p>
+          My mission is to turn ideas into reality through code, design, and innovation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills fade-in-up">
+    <h2>Skills</h2>
+    <div class="skills-grid"></div>
+  </section>
+
+  <section id="projects" class="projects fade-in-up">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card card"><a href="Parts/P/A1/index.html">
+        <h3>Project 1</h3>
+        <img src="Image/P1.png" alt="P1">
+        <p>A word swapping website.</p></a>
+      </div>
+      <div class="project-card card"><a href="Parts/P/A2/SignUp.html">
+        <h3>Project 2</h3>
+        <img src="Image/P2.png" alt="P2">
+        <p>A sign in webiste</p></a>
+      </div>
+      <div class="project-card card"><a href="Parts/P/A3/index.html">
+        <h3>Project 3</h3>
+        <img src="Image/P3.png" alt="P3">
+        <p>A To-Do List</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="Resume">
+    <a href="#" class="btn" role="button" aria-label="Resume">Resume</a>
+  </section>
+
+  <section id="contact" class="contact fade-in-up">
+    <h2>Contact Me</h2>
+    <form class="contact-form" novalidate>
+      <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
+      <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
+      <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <span class="form-status" aria-live="polite"></span>
+    </form>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nishank-khadpe-84ba63363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn">LinkedIn</a> |
+      <a href="https://github.com/nishankkhadpe7-afk" aria-label="GitHub">GitHub</a> |
+      <a href="https://twitter.com/XEO_XD2606" aria-label="Twitter">Twitter</a>
+    </div>
+  </section>
+
+  <footer>
+    <p> 2025 Nishank Khadpe </p>
+  </footer>
+</body>
+</html>
